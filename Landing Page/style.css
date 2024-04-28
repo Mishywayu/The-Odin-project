@@ -77,12 +77,63 @@
 }
 
 /* INFORMATION SECTION */
-
-.information-container {
-    background-color: pink;
-}
-
 .information-container h2 {
     text-align: center;
     padding-top: 20px;
+}
+
+.containers {
+    display: flex;
+    padding: 30px 300px;
+    gap: 40px;
+}
+
+.containers-item1 p, .containers-item2 p, .containers-item3 p, .containers-item4 p {
+    margin-top: 10px;
+}
+
+.illustration {
+    height: 20vh;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+}
+
+/* THOR */
+.thor {
+    background-color: #E5E7EB;
+    padding: 50px 300px;
+}
+
+.thor p {
+    font-size: 25px;
+    font-weight: thin;
+}
+
+.thor h4 {
+    text-align: right;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+/* ACTION */
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.action-content {
+    background-color: #3882F6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.action-content button {
+    
 }
