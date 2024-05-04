@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+#bottom {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#draw-grid {
+  display: grid;
+  border-radius: 15px;
+  margin: auto;
+  padding: auto;
+  width: 40em;
+  height: 40em;
+}
+
+.draw-box {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border: 1px solid pink;
+  margin: 0;
+}
+
+#reset {
+    padding: 10px 20px;
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}

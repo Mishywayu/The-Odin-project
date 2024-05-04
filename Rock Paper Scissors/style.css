@@ -1,4 +1,4 @@
-/* body {
+body {
   font-family: Arial, sans-serif;
   background-color: #f3f3f3;
 }
@@ -43,34 +43,4 @@ button:hover {
 
 #result-text {
   font-size: 18px;
-} */
-
-/* --- NEW --- */
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
-h1 {
-  color: #333;
-}
-
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#score {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #666;
-}
-
-#result {
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
 }
