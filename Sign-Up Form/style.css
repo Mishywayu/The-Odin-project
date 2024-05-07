@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    background-color: pink;
+    width: 70%;
+    height: 93vh;
+}
+
+.image-container {
+    width: 40%;
+    background-image: url('./images/shoes.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    background-image: url('./images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 15vh;
+}
+
+.form-container {
+    background-color: aqua;
+    width: 60%;
+}
+
+.form-container h3 {
+    padding-left: 20px;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.into-p {
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+.second-p {
+    padding-left: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.form-div {
+    background-color: white;
+    padding-left: 20px;
+}
+
+.names, .contacts, .passwords {
+    display: flex;
+}
