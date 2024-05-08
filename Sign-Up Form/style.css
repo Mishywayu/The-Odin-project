@@ -72,7 +72,8 @@ body {
 .form-div {
     background-color: white;
     padding: 20px;
-    margin-top: 10px;
+    margin: 0px 20px;
+    border-radius: 10px;
 }
 
 .form-p {
@@ -81,19 +82,23 @@ body {
     font-weight: bold;
 }
 
-label {
+/* label {
     font-size: 16px;
     margin-bottom: 5px;
     font-weight: thin;
-}
+} */
 
 input {
-    padding: 4px;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid #7CB9E8;
+    color: whitesmoke;
 }
 
 .names {
     display: flex;
     margin-bottom: 10px;
+    gap: 60px;
 }
 
 .contacts, .passwords {
