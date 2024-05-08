@@ -14,7 +14,6 @@ body {
 
 .main-container {
     display: flex;
-    background-color: pink;
     width: 70%;
     height: 93vh;
 }
@@ -46,32 +45,73 @@ body {
 }
 
 .form-container {
-    background-color: aqua;
+    background-color: whitesmoke;
     width: 60%;
 }
 
+.intro-texts {
+    padding: 20px;
+}
+
 .form-container h3 {
-    padding-left: 20px;
     padding-top: 50px;
     font-size: 30px;
 }
 
 .into-p {
-    padding-left: 20px;
+    text-align: justify;
     padding-top: 8px;
+    font-size: 18px;
 }
 
 .second-p {
-    padding-left: 20px;
     padding-top: 15px;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .form-div {
     background-color: white;
-    padding-left: 20px;
+    padding: 20px;
+    margin-top: 10px;
 }
 
-.names, .contacts, .passwords {
+.form-p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: thin;
+}
+
+input {
+    padding: 4px;
+}
+
+.names {
     display: flex;
+    margin-bottom: 10px;
+}
+
+.contacts, .passwords {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: #007FFF;
+    border: none;
+    border-radius: 20px;
+}
+
+.login {
+    margin-top: 5px;
 }
