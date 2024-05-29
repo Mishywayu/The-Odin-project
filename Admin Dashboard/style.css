@@ -58,34 +58,47 @@
     width: 80%;
 }
 
-.top-div {
-    background-color: red;
-}
-
 .div-1 {
     display: flex;
 }
 
 .search {
     display: flex;
-    width: 70%;
-    background-color: pink;
+    align-items: center;
+    gap: 5px;
+    padding: 30px 20px;
 }
 
 .search-icon {
     width: 5%;
 }
 
-.search input
+.search input {
+    padding: 4px 24px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #FAF9F6;
+}
 
 .profile-notifications {
     display: flex;
-    width: 30%;
-    background-color: blue;
+    align-items: center;
+    justify-content: right;
+    padding-right: 50px;
+    gap: 15px;
 }
 
-.notifications, .profile-picture {
-    width: 2%;
+.notifications{
+    width: 5%;
+}
+
+.profile-picture {
+    width: 8%;
+}
+
+.profile-notifications h5 {
+    font-size: 20px;
 }
 
 .lower-div {
