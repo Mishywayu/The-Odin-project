@@ -4,9 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
+.body-container {
+    padding: 0px 50px;
+} 
+
 .main-container {
     display: flex;
-    /* height: auto; */
 }
 
 .side-bar {
@@ -54,10 +61,12 @@
 }
 
 .dashboard-contents {
-    background-color: skyblue;
+    background-color: wheat;
     width: 80%;
 }
-
+.top-div, .lower-div{
+    background-color: white;
+}
 .div-1 {
     display: flex;
 }
@@ -130,30 +139,94 @@
 
 .right-div button {
     padding: 0px 25px;
-    background-color: skyblue;
     border: none;
     color: white;
     border-radius: 20px;
-}
-
-
-.last-div {
-    background-color: pink;
+    background-color: skyblue;
 }
 
 .projects-container {
     display: flex;
-    background-color: black;
     padding: 20px 10px;
     gap: 20px;
 }
 
 .projects-div {
-    background-color: red;
     width: 70%;
 }
 
+.projects-div h4 {
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 30px 20px;
+}
+
+.grid-item h5 {
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.grid-item p {
+    font-size: 15px;
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    justify-content: right;
+}
+
 .announcements-div {
-    background-color: indianred;
     width: 30%;
+}
+
+.announcements-div h4 {
+    font-size: 20px;
+}
+
+.topp-div {
+    background-color: #fff;
+    margin: 5px 10px;
+}
+
+.topp-div h5 {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.topp-div p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.top-div hr {
+    margin: 10px 0px;
+}
+
+.bottom-div {
+    background-color: #fff;
+    margin: 5px 10px;
+    padding: 8px 12px;
+}
+
+.avatar-profile {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.avatar-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }

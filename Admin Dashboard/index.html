@@ -7,105 +7,256 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
-    <div class="main-container">
-      <!-- SIDEBAR -->
-      <div class="side-bar">
-        <!-- logo -->
-        <div class="logo">
-          <img src="images/view-dashboard.svg" />
-          <h2>Dashboard</h2>
+    <div class="body-container">
+      <div class="main-container">
+        <!-- SIDEBAR -->
+        <div class="side-bar">
+          <!-- logo -->
+          <div class="logo">
+            <img src="images/view-dashboard.svg" />
+            <h2>Dashboard</h2>
+          </div>
+          <!-- first items -->
+          <div class="first-items">
+            <ul>
+              <li>
+                <img src="images/home.svg" />
+                <a href="">Home</a>
+              </li>
+              <li>
+                <img src="images/profile.svg" />
+                <a href="">Profile</a>
+              </li>
+              <li>
+                <img src="images/messages.svg" />
+                <a href="">Messages</a>
+              </li>
+              <li>
+                <img src="images/history.svg" />
+                <a href="">History</a>
+              </li>
+              <li>
+                <img src="images/tasks.svg" />
+                <a href="">Tasks</a>
+              </li>
+              <li>
+                <img src="images/communities.svg" />
+                <a href="">Communities</a>
+              </li>
+            </ul>
+          </div>
+          <!-- second items -->
+          <div class="second-items">
+            <ul>
+              <li>
+                <img src="images/settings.svg" />
+                <a href="">Settings</a>
+              </li>
+              <li>
+                <img src="images/support.svg" />
+                <a href="">Support</a>
+              </li>
+              <li>
+                <img src="images/privacy.svg" />
+                <a href="">Privacy</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- first items -->
-        <div class="first-items">
-          <ul>
-            <li>
-              <img src="images/home.svg" />
-              <a href="">Home</a>
-            </li>
-            <li>
-              <img src="images/profile.svg" />
-              <a href="">Profile</a>
-            </li>
-            <li>
-              <img src="images/messages.svg" />
-              <a href="">Messages</a>
-            </li>
-            <li>
-              <img src="images/history.svg" />
-              <a href="">History</a>
-            </li>
-            <li>
-              <img src="images/tasks.svg" />
-              <a href="">Tasks</a>
-            </li>
-            <li>
-              <img src="images/communities.svg" />
-              <a href="">Communities</a>
-            </li>
-          </ul>
-        </div>
-        <!-- second items -->
-        <div class="second-items">
-          <ul>
-            <li>
-              <img src="images/settings.svg" />
-              <a href="">Settings</a>
-            </li>
-            <li>
-              <img src="images/support.svg" />
-              <a href="">Support</a>
-            </li>
-            <li>
-              <img src="images/privacy.svg" />
-              <a href="">Privacy</a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- DASHBOARD CONTENTS -->
-      <div class="dashboard-contents">
-        <div class="top-div">
-          <!-- div one -->
-          <div class="div-1">
-            <div class="search">
-              <img src="images/search.svg" class="search-icon" />
-              <input />
+        <!-- DASHBOARD CONTENTS -->
+        <div class="dashboard-contents">
+          <div class="top-div">
+            <!-- div one -->
+            <div class="div-1">
+              <div class="search">
+                <img src="images/search.svg" class="search-icon" />
+                <input />
+              </div>
+              <div class="profile-notifications">
+                <img src="images/notifications.svg" class="notifications" />
+                <img src="images/prof.jpg" class="profile-picture" />
+                <h5>Morgan Oakley</h5>
+              </div>
             </div>
-            <div class="profile-notifications">
-              <img src="images/notifications.svg" class="notifications" />
+          </div>
+          <!-- div two -->
+          <div class="lower-div">
+            <div class="left-div">
               <img src="images/prof.jpg" class="profile-picture" />
-              <h5>Morgan Oakley</h5>
+              <div class="text">
+                <h5>Hi there,</h5>
+                <p>Morgan Oakley (@morgan)</p>
+              </div>
+            </div>
+            <div class="right-div">
+              <button>New</button>
+              <button>Upload</button>
+              <button>Share</button>
             </div>
           </div>
-        </div>
-        <!-- div two -->
-        <div class="lower-div">
-          <div class="left-div">
-            <img src="images/prof.jpg" class="profile-picture" />
-            <div class="text">
-              <h5>Hi there,</h5>
-              <p>Morgan Oakley (@morgan)</p>
-            </div>
-          </div>
-          <div class="right-div">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-          </div>
-        </div>
 
-        <!-- div three -->
-        <div class="last-div">
-          <div class="projects-container">
-            <!-- left div -->
-            <div class="projects-div">
-              <h4>Your Projects</h4>
-              <div></div>
-            </div>
-            <!-- right div -->
-            <div class="announcements-div">
-              <h4>Announcements</h4>
+          <!-- div three -->
+          <div class="last-div">
+            <div class="projects-container">
+              <!-- left div -->
+              <div class="projects-div">
+                <h4>Your Projects</h4>
+                <div class="grid-container">
+                  <div class="grid-item">
+                    <h5>Super Cool Project</h5>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Iure maxime exercitationem a vitae sequi velit consequatur
+                      assumenda necessitatibus ab, enim facilis, aspernatur
+                      suscipit dolores! Eius fuga neque quidem voluptatum harum.
+                    </p>
+                    <div class="icons">
+                      <img src="/images/add.png" width="20" height="20" />
+                      <img src="/images/like.png" width="18" height="18" />
+                      <img src="/images/share.png" width="18" height="18" />
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <h5>Less Cool project</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maxime delectus, omnis fugit recusandae vel expedita
+                      accusantium est? Sed unde deleniti, dolor, cum voluptas ad
+                      fuga harum quidem nostrum qui placeat!
+                    </p>
+                    <div class="icons">
+                      <img src="/images/add.png" width="20" height="20" />
+                      <img src="/images/like.png" width="18" height="18" />
+                      <img src="/images/share.png" width="18" height="18" />
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <h5>Impossible App</h5>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quia laboriosam deleniti dolor eligendi fuga, reiciendis,
+                      impedit labore quis voluptatibus velit vitae repudiandae
+                      obcaecati, tempore asperiores eius fugit maxime. Eius,
+                      aperiam!
+                    </p>
+                    <div class="icons">
+                      <img src="/images/add.png" width="20" height="20" />
+                      <img src="/images/like.png" width="18" height="18" />
+                      <img src="/images/share.png" width="18" height="18" />
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <h5>Easy Peasy App</h5>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Distinctio corrupti ratione deleniti ea repellat placeat
+                      nemo non inventore ipsam, quidem dicta porro modi,
+                      provident eaque accusantium illo cum qui beatae.
+                    </p>
+                    <div class="icons">
+                      <img src="/images/add.png" width="20" height="20" />
+                      <img src="/images/like.png" width="18" height="18" />
+                      <img src="/images/share.png" width="18" height="18" />
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <h5>Ad Blocker</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Perferendis cum optio fugiat veniam eum officiis magni
+                      doloremque vel atque quam sunt placeat dicta praesentium
+                      dolores ex exercitationem, quaerat aliquam molestiae!
+                    </p>
+                    <div class="icons">
+                      <img src="/images/add.png" width="20" height="20" />
+                      <img src="/images/like.png" width="18" height="18" />
+                      <img src="/images/share.png" width="18" height="18" />
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <h5>Money Maker</h5>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Illum recusandae ipsam eligendi saepe deserunt incidunt,
+                      officiis expedita ullam perferendis eveniet aut? Minus
+                      atque libero perferendis amet alias enim iusto ea.
+                    </p>
+                    <div class="icons">
+                      <img src="/images/add.png" width="20" height="20" />
+                      <img src="/images/like.png" width="18" height="18" />
+                      <img src="/images/share.png" width="18" height="18" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- right div -->
+              <div class="announcements-div">
+                <!-- top div -->
+                <h4>Announcements</h4>
+                <div class="topp-div">
+                  <h5>Site Maintenance</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod excepturi cum deserunt laborum, nihil perferendis,
+                    consequuntur cumque libero beatae dolorum voluptates, qui
+                    dignissimos odit numquam illum id tenetur quibusdam
+                    molestiae?
+                  </p>
+                  <hr />
+                  <h5>Community Share Day</h5>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Pariatur, aperiam. Corporis, repellendus cumque! Amet omnis
+                    alias pariatur! Velit nam totam nihil beatae porro
+                    laboriosam. Aspernatur ad distinctio obcaecati consequatur
+                    quo!
+                  </p>
+                  <hr />
+                  <h5>Updated Privacy Policy</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi maxime porro molestias cum distinctio repellat
+                    aspernatur doloremque ab soluta inventore animi unde
+                    accusamus, at asperiores architecto ipsam temporibus
+                    dolorem. Consequuntur!
+                  </p>
+                </div>
+                <!-- bottom div -->
+                <h4>Trending</h4>
+                <div class="bottom-div">
+                  <div class="avatar-profile">
+                    <img src="/images/ME.jpg" />
+                    <div>
+                      <h5>@tegan</h5>
+                      <p>World Peace Builder</p>
+                    </div>
+                  </div>
+
+                  <div class="avatar-profile">
+                    <img src="/images/prof.jpg" />
+                    <div>
+                      <h5>@morgan</h5>
+                      <p>Super Cool Project</p>
+                    </div>
+                  </div>
+
+                  <div class="avatar-profile">
+                    <img src="/images/InShot_20230506_215034701.jpg" />
+                    <div>
+                      <h5>@kendall</h5>
+                      <p>Life Changing App</p>
+                    </div>
+                  </div>
+                  <div class="avatar-profile">
+                    <img src="/images/wa.jpg" />
+                    <div>
+                      <h5>@alex</h5>
+                      <p>No Traffic Maker</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
