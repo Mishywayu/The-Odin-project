@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
-}
-
 .body-container {
     padding: 0px 50px;
 } 
@@ -61,7 +57,7 @@ body {
 }
 
 .dashboard-contents {
-    background-color: wheat;
+    background-color: #b1b7c1;
     width: 80%;
 }
 .top-div, .lower-div{
@@ -87,7 +83,7 @@ body {
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: #FAF9F6;
+    background-color: #b1b7c1;
 }
 
 .profile-notifications {
@@ -168,6 +164,8 @@ body {
 .grid-item {
     background-color: #fff;
     padding: 30px 20px;
+    border-radius: 10px;
+    border-left: 7px solid orange;
 }
 
 .grid-item h5 {
@@ -196,7 +194,8 @@ body {
 
 .topp-div {
     background-color: #fff;
-    margin: 5px 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .topp-div h5 {
@@ -215,8 +214,12 @@ body {
 
 .bottom-div {
     background-color: #fff;
-    margin: 5px 10px;
-    padding: 8px 12px;
+    padding: 18px 12px;
+    border-radius: 10px;
+}
+
+.bottom-h4 {
+    margin-top: 25px;
 }
 
 .avatar-profile {
