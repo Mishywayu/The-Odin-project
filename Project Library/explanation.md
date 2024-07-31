@@ -4,8 +4,10 @@ The 'info' method returns a string cntaining the book's details.
 
 
 ## addBookToLibrary Function:
-Takes user input for the title, author, numbe rof paes, and read status, creates a new book object, and adds it to the 'myLibrary' array using the 'PUSH METHOD'
+Takes user input for the title, author, numbe rof paes, and read status, creates a new book object, and adds it to the 'myLibrary' array using the 'PUSH METHOD'.  
 
+
+# Displaying the library in the console
 ## displayLibrary Function: 
 Loops through the myLibrary array and logs the information for each book using the info method.
  #### explaining the loop part
@@ -21,3 +23,4 @@ myLibrary.length gives the total number of elements in the myLibrary array.
 At the end of each loop iteration, the counter variable i is incremented by 1 (i.e., i++).  
 That is, the counter variable was set to [0], index 0, so with i++ it will move to index [1].
 
+# Displaying the library on the web using cards

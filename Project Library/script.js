@@ -19,9 +19,23 @@ function addBookToLibrary(title, author, pages, isRead) {
 }
 
 function dispalyLibrary () {
-    for (let i = 0; i < myLibrary.length; i++) {
-        console.log(myLibrary[i].info());
-    }
+    // for (let i = 0; i < myLibrary.length; i++) {
+    //     console.log(myLibrary[i].info());
+    // }
+
+    const libraryDiv = document.getElementById('library');
+    libraryDiv.innerHTML = ''; // Clear existing content
+
+    myLibrary.forEach((book, index) => {
+        const bookCard = document.createElement('div');
+        bookCard.className = 'book-card';
+
+        const bookInfo = document.createElement('p');
+        bookInfo.textContent = book.info();
+
+        bookCard.appendChild(bookInfo);
+        libraryDiv.appendChild(bookCard);
+    });
 }
 
 
