@@ -16,10 +16,10 @@ const myDog = {
     }  
   };
   
-  // Use the object's properties and methods
-  console.log(myDog.name); // Output: Rex 
-  console.log(myDog.breed); // Output: Golden Retriever
-  console.log(myDog.bark()); // Output: Rex says woof!
+  // Use the object's properties and methods 
+  console.log(myDog.name); // Output: Rex  
+  console.log(myDog.breed); // Output: Golden Retriever 
+  console.log(myDog.bark()); // Output: Rex says woof! 
 
 
   ### What is an OBJECT CONSTRUCTOR
