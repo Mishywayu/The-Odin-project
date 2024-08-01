@@ -54,7 +54,7 @@ This function updates the HTML to display the books in the library:
 * It loops through each book in the myLibrary array.  
 
   for (let i = 0; i < myLibrary.length; i++) {   
-    ..do smth  
+    ..do smth    
 }  
 * For each book, it creates a div element with the class book-card and a p element containing the book's information.  
 
@@ -70,3 +70,16 @@ This function updates the HTML to display the books in the library:
 
 
 ## Add a “NEW BOOK” button that brings up a form allowing users to input the details for the new book:
+1. document.getElementById("newBookBtn"): 
+This selects the HTML element with the id newBookBtn, which is presumably a button in the HTML.
+
+2. .addEventListener("click", () => { ... }):  
+This attaches an event listener to the newBookBtn element. The event listener listens for a click event.
+When the button is clicked, the function inside the curly braces { ... } is executed.
+
+3. document.getElementById("bookFormContainer"):  
+Inside the event listener function, this selects the HTML element with the id bookFormContainer. This is presumably the container for the book input form.
+
+4. .classList.toggle("form-container"):  
+classList is a property that returns the class names of an element as a DOMTokenList object, which is useful for adding, removing, and toggling classes.
+toggle("form-container") is a method that adds the class form-container to the element if it is not already present, and removes it if it is present.
