@@ -70,16 +70,19 @@ This function updates the HTML to display the books in the library:
 
 
 ## Add a “NEW BOOK” button that brings up a form allowing users to input the details for the new book:
-1. document.getElementById("newBookBtn"): 
-This selects the HTML element with the id newBookBtn, which is presumably a button in the HTML.
+1. ### Adding an Event Lister to a Button
+document.getElementById("newBookBtn").addEventListener("click", () => {
+  document.getElementById("bookFormContainer").classList.toggle("form-container");
+});
 
-2. .addEventListener("click", () => { ... }):  
-This attaches an event listener to the newBookBtn element. The event listener listens for a click event.
-When the button is clicked, the function inside the curly braces { ... } is executed.
-
-3. document.getElementById("bookFormContainer"):  
-Inside the event listener function, this selects the HTML element with the id bookFormContainer. This is presumably the container for the book input form.
-
-4. .classList.toggle("form-container"):  
-classList is a property that returns the class names of an element as a DOMTokenList object, which is useful for adding, removing, and toggling classes.
-toggle("form-container") is a method that adds the class form-container to the element if it is not already present, and removes it if it is present.
+* document.getElementById("newBookBtn"):   
+This selects the HTML element with the ID newBookBtn.
+* .addEventListener("click", ...):  
+Adds an event listener that listens for a click event on the selected element.
+* () => { ... }:  
+This is an arrow function that will be executed when the button is clicked.
+* document.getElementById("bookFormContainer"):  
+Selects the HTML element with the ID bookFormContainer.
+* .classList.toggle("form-container"):  
+Toggles the form-container class on the bookFormContainer element.   This means if the form-container class is present, it will be removed; if it is not present, it will be added.  
+This is typically used to show or hide the form.
