@@ -86,3 +86,41 @@ Selects the HTML element with the ID bookFormContainer.
 * .classList.toggle("form-container"):  
 Toggles the form-container class on the bookFormContainer element.   This means if the form-container class is present, it will be removed; if it is not present, it will be added.  
 This is typically used to show or hide the form.
+
+2. ### Adding an Event Listerner to a Form
+document.getElementById("bookForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const title = document.getElementById("title").value;
+  const author = document.getElementById("author").value;
+  const pages = document.getElementById("pages").value;
+  const isRead = document.getElementById("isRead").checked;
+
+  addBookToLibrary(title, author, pages, isRead);
+  document.getElementById("bookForm").reset();
+  document.getElementById("bookFormContainer").classList.add("hidden");
+});
+
+* document.getElementById("bookForm"):  
+Selects the HTML element with the ID bookForm.
+* .addEventListener("submit", (e) => { ... }):  
+Adds an event listener that listens for a submit event on the selected form element.
+* (e):  
+This is the event object representing the event that triggered the listener.
+* e.preventDefault():  
+Prevents the default action of the form submission, which is to reload the page.
+* const title = document.getElementById("title").value:  
+Selects the input element with the ID title and gets its value.
+* const author = document.getElementById("author").value:  
+Selects the input element with the ID author and gets its value.
+* const pages = document.getElementById("pages").value:  
+Selects the input element with the ID pages and gets its value.
+* const isRead = document.getElementById("isRead").checked:  
+Selects the checkbox input element with the ID isRead and gets its checked status (true if checked, false if not).
+* addBookToLibrary(title, author, pages, isRead):  
+Calls the addBookToLibrary function with the collected values as arguments.  
+This function is assumed to be defined elsewhere in the script and handles adding the new book to the library.
+* document.getElementById("bookForm").reset():  
+Resets the form fields to their default values.
+* document.getElementById("bookFormContainer").classList.add("hidden"):  
+Adds the hidden class to the bookFormContainer element, typically used to hide the form after submission.
